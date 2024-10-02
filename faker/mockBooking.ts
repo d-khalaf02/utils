@@ -1,7 +1,5 @@
-import { createBookingInstance } from '../../enities/booking/createBookingInstance'
-import type { IBooking } from '../../enities/interfaces/IBooking'
-import { container } from '../../inversify/container'
-import { TYPES } from '../../inversify/types'
+import { createBookingInstance, IBooking } from '@fewo-monorepo/entities'
+import { container, TYPES } from '@fewo-monorepo/inversify'
 
 export function mockBooking() {
     const booking = container.get<IBooking>(TYPES.BookingFaker)

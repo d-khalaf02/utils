@@ -1,4 +1,4 @@
-import { IAddress } from '../../enities/interfaces/IAddress'
+import { IAddress } from '@fewo-monorepo/entities'
 import { ValidateAddress, ValidateId, ValidateName, ValidationErrors } from './ValidatePerson'
 
 export class Validator{

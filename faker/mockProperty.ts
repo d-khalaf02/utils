@@ -1,8 +1,5 @@
-import { IProperty } from '../../enities/interfaces/IProperty'
-import { createPropertyInstance } from '../../enities/property/createPropertyInstance'
-import { container } from '../../inversify/container'
-import { TYPES } from '../../inversify/types'
-
+import { IProperty, createPropertyInstance } from '@fewo-monorepo/entities'
+import { container, TYPES } from '@fewo-monorepo/inversify'
 
 export function mockProperty(){
     const propertyFaker = container.get<IProperty>(TYPES.PropertyFaker)

@@ -1,10 +1,8 @@
 import { injectable } from 'inversify'
-import type { IAddress } from '../../enities/interfaces/IAddress'
-import type { IAminities } from '../../enities/interfaces/IAminities'
-import type { IPerson } from '../../enities/interfaces/IPerson'
-import type { IProperty } from '../../enities/interfaces/IProperty'
-import { useFaker } from '../../wrapper/useFaker'
+
 import { unknownPerson } from './PersonFaker'
+import { IAddress, IAminities, IPerson, IProperty } from '@fewo-monorepo/entities'
+import { useFaker } from '@fewo-monorepo/wrapper'
 
 const faker = useFaker()
 

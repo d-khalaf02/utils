@@ -1,8 +1,8 @@
 import 'reflect-metadata'
 import { injectable } from 'inversify'
-import type { IAddress } from '../../enities/interfaces/IAddress'
-import { IPerson } from '../../enities/interfaces/IPerson'
-import { useFaker } from '../../wrapper/useFaker'
+import { IAddress, IPerson } from '@fewo-monorepo/entities'
+import { useFaker } from '@fewo-monorepo/wrapper'
+
 const faker = useFaker()
 
 @injectable()

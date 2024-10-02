@@ -12,6 +12,11 @@
   "dependencies": {
     "typescript": "~5.6.2",
     "inversify": "~6.0.2",
-    "reflect-metadata": "~0.2.2"
+    "reflect-metadata": "~0.2.2",
+    "vitest": "~2.1.1",
+
+    "@fewo-monorepo/entities": "workspace:*",
+    "@fewo-monorepo/inversify": "workspace:*",
+    "@fewo-monorepo/wrapper": "workspace:*"
   }
 }
