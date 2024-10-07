@@ -1,7 +1,6 @@
-import 'reflect-metadata'
-import { injectable } from 'inversify'
 import { IAddress, IPerson } from '@fewo-monorepo/entities'
 import { useFaker } from '@fewo-monorepo/wrapper'
+import { injectable } from 'inversify'
 
 const faker = useFaker()
 

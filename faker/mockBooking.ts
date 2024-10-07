@@ -1,14 +1,40 @@
-import { IBooking, TYPES } from '@fewo-monorepo/entities'
+import { useFaker } from '@fewo-monorepo/wrapper'
 import { createBookingInstance } from '../creators/createBookingInstance'
-import { container } from '../inversify/container'
 
+const faker = useFaker()
 export function mockBooking() {
-    const booking = container.get<IBooking>(TYPES.BookingFaker)
-
     return createBookingInstance(
-        booking.id,
-        booking.services,
-        booking.checkInDate,
-        booking.checkOutDate
-    )
+        2342342345345,
+        [
+            {
+                name: 'Daliy Housekeeping',
+                description: 'Daily cleaning of the apartment including towel and bed linen replacement.',
+                price: 50
+            },
+            {
+                name: 'Airport Pickup',
+                description: 'Pickup from the airport to the apartment.',
+                price: 30
+            },
+            {
+                name: "Grocery Delivery",
+                description: "Order groceries to be delivered to your apartment.",
+                price: 15,
+                itemslist: ["Milk", "Eggs", "Bread", "Cheese"],
+                deliveryTime: "09:00 AM"
+            },
+            {
+                name: 'Pet Sitting',
+                description: 'Pet sitting service for your cats and dogs.',
+                price: 40,
+                pets: ['Dog', 'Cat']
+            },
+            {
+                name: 'Maintaince Request',
+                description: 'Maintaince service for your apartment',
+                issueTypes: ['Plumping', 'Electrical', 'Heating']
+            }
+        ],
+        faker.date.past(),
+        faker.date.soon())
 }

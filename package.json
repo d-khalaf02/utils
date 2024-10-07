@@ -19,6 +19,12 @@
     "@fewo-monorepo/wrapper": "workspace:*",
     "tsc-alias": "~1.8.10",
     "rimraf": "~6.0.1",
-    "@fewo-monorepo/entities": "workspace:*"
+    "@fewo-monorepo/entities": "workspace:*",
+    "ts-loader": "~9.5.1",
+    "ts-node": "~10.9.2",
+    "@types/node": "~22.7.4",
+    "webpack": "~5.95.0",
+    "faker": "~6.6.6",
+    "@faker-js/faker": "~9.0.3"
   }
 }

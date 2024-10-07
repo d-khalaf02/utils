@@ -40,6 +40,7 @@ export class PropertyBuilder{
     }
 
     build() : IProperty{
+        console.log('Building an Instance of Property')
         return new Property(
             this.id,
             this.name,

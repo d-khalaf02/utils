@@ -1,13 +1,13 @@
 import { injectable } from 'inversify'
 import { IBooking, IPerson, IProperty, IService } from '@fewo-monorepo/entities'
 import { useFaker } from '@fewo-monorepo/wrapper'
+
 import { mockProperty } from './mockProperty'
 import { unknownPerson } from './PersonFaker'
 import { unknownProperty } from './PropertyFaker'
 
 const faker = useFaker()
 
-@injectable()
 export class BookingFaker implements IBooking{
     checkInDate: Date
     checkOutDate: Date
@@ -50,14 +50,9 @@ export class BookingFaker implements IBooking{
                 issueTypes: ['Plumping', 'Electrical', 'Heating']
             }
         ]
-        try{
-            this.property = mockProperty()
-            this.guests = [mockProperty()]
-        }catch(error){
-            console.log(error)
-            this.property = unknownProperty
-            this.guests = [unknownPerson]
-        }
+
+        this.property = mockProperty()
+        this.guests = [mockProperty()]
     }
 }
 

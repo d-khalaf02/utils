@@ -11,9 +11,9 @@ export function createPropertyInstance(
     address: IAddress,
     aminities: IAminities[]
 ){
+
     Validator.validate(name, id, address)
     const propertyBuilder = container.get<PropertyBuilder>(TYPES.PropertyBuilder)
-
     return propertyBuilder
         .setId(id)
         .setName(name)
