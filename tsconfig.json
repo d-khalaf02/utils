@@ -4,6 +4,8 @@
     "lib": ["es2020", "DOM"],
     "outDir": "./dist",
     "types": ["vitest/globals"],
+    "experimentalDecorators": true,                   /* Enable experimental support for legacy experimental decorators. */
+    "emitDecoratorMetadata": true,
     "paths": {
       "@fewo-monorepo/wrapper": [
         "../wrapper"
