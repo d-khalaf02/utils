@@ -1,6 +1,5 @@
 import { inject, injectable } from 'inversify'
-import { IAddress, IAminities, IPerson, IProperty, Property } from '@fewo-monorepo/entities'
-import { TYPES } from '@fewo-monorepo/inversify'
+import { IAddress, IAminities, IPerson, IProperty, Property, TYPES } from '@fewo-monorepo/entities'
 
 @injectable()
 export class PropertyBuilder{

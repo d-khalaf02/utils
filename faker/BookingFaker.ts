@@ -1,5 +1,5 @@
 import { injectable } from 'inversify'
-import { IBooking, IPerson, IProperty, IService} from '@fewo-monorepo/entities'
+import { IBooking, IPerson, IProperty, IService } from '@fewo-monorepo/entities'
 import { useFaker } from '@fewo-monorepo/wrapper'
 import { mockProperty } from './mockProperty'
 import { unknownPerson } from './PersonFaker'

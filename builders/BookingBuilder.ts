@@ -1,6 +1,5 @@
 import { inject, injectable } from 'inversify'
-import { Booking, IPerson, IProperty, IService } from '@fewo-monorepo/entities'
-import { TYPES } from '@fewo-monorepo/inversify'
+import { Booking, IPerson, IProperty, IService, TYPES } from '@fewo-monorepo/entities'
 
 @injectable()
 export class BookingBuilder{
